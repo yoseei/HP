@@ -1,0 +1,398 @@
+@charset "UTF-8";
+body {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+  margin: 0;
+  background: rgb(255, 255, 255);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+/* home-photo */
+
+.home-photo {
+  background-image: url(../img/first-page.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+/* header */
+
+header {
+  text-align: center;
+}
+
+.header-container {
+  background-image: url(../img/keshiki.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+header a {
+  color: #000;
+}
+
+header h1 {
+  font-family: 'Noto Serif', serif;
+  font-size: 28px;
+  padding-top: 10px;
+  text-decoration: none;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 30px;  
+}
+
+header li {
+  font-size: 16px;
+  list-style: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+}
+
+.header-h2 {
+  padding: 30px 0 30px;
+  font-size: 32px;
+}
+
+/* article */
+.home-article {
+  text-align: center;
+  margin-top: 35%;
+}
+
+.home-article h1 {
+  font-family: 'Noto Serif', serif;
+  font-size: 2rem;
+}
+
+.home-article h2 {
+  font-size: 14px;
+  padding: 20px 0 30px;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+ 
+.home-article a {
+  color: #fff;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-weight: lighter;
+  text-decoration: none;
+  background: #0bd;
+  padding: 12px 20px;
+  border-radius: 5px;
+}
+
+.home-article a:hover {
+  opacity: .8;
+}
+
+/* profile */
+
+.header-h2 {
+  font-family: 'Noto Serif', serif;
+}
+
+.profile-wrapper {
+  flex: 1;
+  padding-top: 20px;
+}
+
+.profile-about {
+  margin: 20px 20px;
+}
+
+.profile-about p {
+  font-family: 'M PLUS 1p', sans-serif;
+  margin: 40px 0 40px;
+  font-size: 20px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.297);
+}
+
+.profile-image {
+  background-image: url(../img/yoseei_drums.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 200px;
+}
+
+.profile-article {
+  margin: 0 20px;
+  padding-bottom: 20px; 
+  line-height: 1.75rem;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-weight: lighter;
+}
+
+.profile-sidebar {
+  background: #FAF7F0;
+  padding: 10px 0 20px 0;
+}
+
+.sns-box {
+  margin:  10px;
+}
+
+.sns-box h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  border-bottom: 3px solid skyblue;
+  padding-bottom: 5px;
+}
+/* footer */
+footer {
+  text-align: center;
+  color: #fff;
+}
+
+.footer-wrapper {
+  background-color: rgb(23, 12, 2);
+  height: 85px;
+  width: 100%;
+}
+
+.sns-icon {
+  padding-top: 10px;
+  text-align: center;
+}
+.sns-icon a {
+  color: #fff;
+}
+.sns-icon .fab {
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+
+footer p {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 12px;
+  margin: 10px 0 0;
+}
+
+/* contact */
+.contact-wrapper {
+  background-image: url(../img/contact.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+/* main */
+
+.contact-main h1 {
+  font-family: 'Noto Serif', serif;
+  margin: 60px 10px 10px;
+}
+
+.contact-box {
+  font-family: 'M PLUS 1p', sans-serif;
+  font-weight: lighter;
+  margin: 20px 10px;
+}
+
+.contact-box input {
+  display: block;
+  width: 100%;
+  padding: 10px 10px;
+  opacity: .5;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.contact-box textarea {
+  display: block;
+  width: 100%;
+  height: 6rem;
+  padding: 10px 10px;
+  opacity: .5;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.contact-wrapper .button {
+  font-family: 'M PLUS 1p', sans-serif;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 10px;
+  padding: 10px 30px;
+  background: #00BBDD;
+  cursor: pointer;
+}
+
+.contact-wrapper .button:hover {
+  opacity: .8;
+}
+
+/* footer */
+
+
+@media screen and (min-width: 600px) {
+
+  .header-container {
+    padding: 20px 5% 20px;
+  }
+
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header h1 {
+    padding: 0;
+  }
+
+  .header-home {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 70px;
+  }
+  
+  .header-home ul {
+    padding: 0;
+    gap: 30px
+  }
+
+  .header-ul {
+    padding: 0;
+    display: flex;
+  }
+
+  .header-li {
+    margin-right: 10%;  
+  }
+
+  .header-h2 {
+    padding: 30px 0 20px; 
+    font-size: 38px;
+  }
+
+  
+  /* article */
+  
+  .home-article { 
+    margin-top:  30%;
+  }
+
+  .home-article h1 {
+    font-size: 42px;
+  }
+
+  .home-article h2 {
+    font-size: 15px;
+  }
+
+  .profile-about {
+    margin: 0 40px;
+    flex-direction: column;
+  }
+
+  .profile-about p {
+    font-size: 18px;
+    line-height: center;
+  }
+
+  .profile-image {
+    border-radius: 0%;
+    width: 100%;
+    height: 250px;
+  }
+
+  .profile-article {
+    margin: 0 40px;
+  }
+
+  .profile-article p {
+    font-size: 18px;
+  }
+
+  /* sidebar */
+  .profile-sidebar {
+    display: flex;
+  }
+
+  .sns-box {
+    width: 30%;
+  }
+  
+  /* contact */
+  .contact-header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 70px;
+  }
+
+  .contact-main h1 {
+    font-size: 3rem;
+    margin-left: 70px;
+  }
+  .contact-box {
+    margin: 20px 70px;
+  }
+  
+  .contact-box input {
+    width: 240px;
+    height: 3rem;
+  }
+
+  .contact-box textarea {
+    width: 480px;
+  }
+
+  .contact-wrapper .button {
+    margin: 10px 70px 30px;
+  }
+
+}
+
+@media screen and (min-width: 960px) {
+
+  /*article*/
+
+  .profile-wrapper {
+    display: flex;
+  }
+
+  .profile-container {
+    flex: 2;
+  }
+
+  .home-article {
+    margin-top: 20%;
+  }
+
+  /* profile */
+  .profile-sidebar {
+    flex-direction: column;
+    flex: 1;
+    margin-right: 25px;
+    margin-bottom: 20px;
+  }
+
+  .sns-box {
+    width: 90%;
+  }
+}
