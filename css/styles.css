@@ -215,7 +215,7 @@ footer p {
   display: block;
   width: 100%;
   padding: 10px 10px;
-  opacity: .5;
+  background: rgba(255, 255, 255, .5);
   border: none;
   border-radius: 5px;
   box-sizing: border-box;
@@ -226,7 +226,7 @@ footer p {
   width: 100%;
   height: 6rem;
   padding: 10px 10px;
-  opacity: .5;
+  background: rgba(255, 255, 255, .5);
   border: none;
   border-radius: 5px;
   box-sizing: border-box;
@@ -237,7 +237,7 @@ footer p {
   color: #fff;
   border: none;
   border-radius: 5px;
-  margin: 10px 10px;
+  margin: 10px 10px 70px;
   padding: 10px 30px;
   background: #00BBDD;
   cursor: pointer;
@@ -247,8 +247,91 @@ footer p {
   opacity: .8;
 }
 
-/* footer */
+/* confirm */
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
 
+.alert {
+  font-family: 'M PLUS 1p', sans-serif;
+  display: block;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 0px 10px;
+}
+
+.confirm-wrapper {
+  background-image: url(../img/contact.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.confirmation-title {
+  font-family: 'Noto Serif', serif;
+  font-size: 30px;
+  margin: 7rem 0 40px;
+}
+
+.confirmation-about {
+  background: rgba(255, 255, 255, .8);
+  padding: 40px;
+  line-height: 2.5;
+  font-family: 'Roboto Condensed', 'M PLUS 1p', serif;
+  width: 90%;
+  border-radius: 8px;
+  margin: 0 auto;
+  word-wrap: break-word;
+} 
+
+.confirmation-about p {
+  margin: 0;
+}
+.confirm-wrapper {
+  background-image: url(../img/contact.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  text-align: center;
+  }
+
+  .button {
+  font-family: 'M PLUS 1p', sans-serif;
+  background: #00bbdd;
+  border: none;
+  padding: 10px 40px;
+  margin: 50px .5rem 100px;
+  }
+
+  .button:hover {
+    opacity: .8;
+    background: #00bbdd;
+  }
+
+/* thanks */
+
+.thanks-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.thanks {
+  flex: 1;
+  position: relative;
+}
+
+.thanks p {
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 1.25rem;
+  padding: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 @media screen and (min-width: 600px) {
 
@@ -363,9 +446,26 @@ footer p {
   }
 
   .contact-wrapper .button {
-    margin: 10px 70px 30px;
+    margin: 20px 70px 80px;
+  }
+  /* confirmation */
+  .alert {
+    width: 480px;
+    margin-left: 70px;
   }
 
+  .confirmation-about {
+    width: 60%;
+  }
+
+  .confirmation-title {
+    font-size: 35px;
+  }
+
+  /* thanks */
+  .thanks p {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 960px) {
@@ -394,5 +494,10 @@ footer p {
 
   .sns-box {
     width: 90%;
+  }
+
+  /* confirmation */
+  .confirmation-about {
+    width: 50%;
   }
 }
